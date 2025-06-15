@@ -93,3 +93,11 @@ document.addEventListener('DOMContentLoaded', function() {
       guestList.appendChild(guestItem);
     });
   }
+  function toggleAttendance(id) {
+    const guest = guests.find(g => g.id === id);
+    if (guest) {
+      guest.attending = !guest.attending;
+      saveGuests();
+      renderGuestList();
+    }
+  }
