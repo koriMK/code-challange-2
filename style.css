@@ -48,3 +48,28 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             border: 1px solid rgba(140, 109, 70, 0.1);
         }
+         .step-1 {
+            width: 100%;
+            z-index: 4;
+            background: var(--cream);
+        }
+        
+        .step-2 {
+            width: 95%;
+            margin-left: 2.5%;
+            z-index: 3;
+            background: var(--cream-dark);
+        }
+        
+        .step-3 {
+            width: 90%;
+            margin-left: 5%;
+            z-index: 2;
+            background: var(--cream-darker);
+        }
+        
+        .step-4 {
+            width: 85%;
+            margin-left: 7.5%;
+            z-index: 1;
+        }
