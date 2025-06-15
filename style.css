@@ -37,7 +37,6 @@
             margin: 0 auto;
         }
         
-        /* Stair steps */
         .stair-step {
             background: var(--cream);
             border-radius: 12px;
@@ -122,4 +121,58 @@
             border-color: var(--accent-light);
             box-shadow: 0 0 0 3px rgba(140, 109, 70, 0.1);
         }
+        button {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
         
+        button:hover {
+            background: var(--accent-light);
+            transform: translateY(-2px);
+        }
+        
+        button:active {
+            transform: translateY(0);
+        }
+        
+        #guest-list {
+            margin-top: 30px;
+        }
+        
+        .guest-count {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 8px;
+            border: 1px solid rgba(140, 109, 70, 0.1);
+        }
+        
+        .count-item {
+            text-align: center;
+            flex: 1;
+        }
+        
+        .count-number {
+            font-size: 1.8rem;
+            font-weight: 300;
+            color: var(--accent);
+        }
+        
+        .count-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
