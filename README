@@ -16,3 +16,43 @@ Remove guests from the list
 Edit guest information
 
 Persist data using localStorage
+
+## Build With
+
+https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
+
+https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
+
+https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
+
+## features
+
+1-  Guest Management:
+
+Add new guests with name and category
+
+Edit existing guest information
+
+Remove guests from the list
+
+Toggle attendance status
+
+2-  Categories:
+
+Friends (blue accent)
+
+Family (orange accent)
+
+Colleagues (purple accent)
+
+3-  Data Persistence:
+
+All guests are saved to localStorage
+
+Data persists between browser sessions
+
+4-  Responsive Design:
+
+Works on mobile and desktop devices
+
+Clean, intuitive interface
