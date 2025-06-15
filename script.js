@@ -11,3 +11,15 @@ document.addEventListener('DOMContentLoaded', function() {
     guests = JSON.parse(localStorage.getItem('guests'));
     renderGuestList();
   }
+  guestForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const name = guestNameInput.value.trim();
+    const category = guestCategorySelect.value;
+    
+    if (!name) return;
+    
+    if (guests.length >= MAX_GUESTS) {
+      alert(`Sorry, the guest list is limited to ${MAX_GUESTS} people.`);
+      return;
+    }
