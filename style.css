@@ -1,0 +1,50 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        :root {
+            --cream: #f9f5f0;
+            --cream-dark: #f0e8df;
+            --cream-darker: #e6d9c9;
+            --accent: #8c6d46;
+            --accent-light: #b89b7a;
+            --text: #4a3c2a;
+            --text-light: #7a6b58;
+            --success: #8c9e6d;
+            --danger: #b85d6d;
+            --friend: #6d8c9e;
+            --family: #9e8c6d;
+            --colleague: #8c6d9e;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f1e9e1 0%, #e7dfd6 100%);
+            min-height: 100vh;
+            padding: 30px 20px;
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .stair-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Stair steps */
+        .stair-step {
+            background: var(--cream);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(140, 109, 70, 0.15);
+            padding: 30px;
+            position: relative;
+            margin-bottom: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(140, 109, 70, 0.1);
+        }
