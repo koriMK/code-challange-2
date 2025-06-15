@@ -1,0 +1,18 @@
+### Event Guest List Manager
+
+https://github.com/koriMK/code-challenge-2
+
+
+## About The Project
+
+The Event Guest List Manager is a web application that helps you manage guests for your events. It allows you to:
+
+Add guests with their names and categories
+
+Track attendance status (Attending/Not Attending)
+
+Remove guests from the list
+
+Edit guest information
+
+Persist data using localStorage
