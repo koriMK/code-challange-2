@@ -56,3 +56,35 @@ Data persists between browser sessions
 Works on mobile and desktop devices
 
 Clean, intuitive interface
+
+## Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+Prerequisites
+A modern web browser (Chrome, Firefox, Safari, Edge)
+
+(Optional) A local web server for testing
+
+
+## Installation
+
+Clone the repo
+Open index.html in your browser
+
+
+## Usage
+
+Enter a guest name in the input field
+
+Select a category (Friend, Family, or Colleague)
+
+Click "Add Guest" to add them to your list
+
+Use the buttons to:
+
+Toggle attendance status
+
+Edit the guest's name
+
+Remove the guest from the list
