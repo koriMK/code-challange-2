@@ -101,3 +101,28 @@ document.addEventListener('DOMContentLoaded', function() {
       renderGuestList();
     }
   }
+   function editGuest(id) {
+    const guest = guests.find(g => g.id === id);
+    if (!guest) return;
+    
+    const newName = prompt('Edit guest name:', guest.name);
+    if (newName && newName.trim() !== '') {
+      guest.name = newName.trim();
+      guest.timestamp = new Date().toLocaleString();
+      saveGuests();
+      renderGuestList();
+    }
+  }
+
+  function removeGuest(id) {
+    if (confirm('Are you sure you want to remove this guest?')) {
+      guests = guests.filter(guest => guest.id !== id);
+      saveGuests();
+      renderGuestList();
+    }
+  }
+
+  function saveGuests() {
+    localStorage.setItem('guests', JSON.stringify(guests));
+  }
+});
