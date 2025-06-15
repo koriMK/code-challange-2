@@ -23,3 +23,18 @@ document.addEventListener('DOMContentLoaded', function() {
       alert(`Sorry, the guest list is limited to ${MAX_GUESTS} people.`);
       return;
     }
+    const newGuest = {
+      id: Date.now(),
+      name,
+      category,
+      attending: true,
+      timestamp: new Date().toLocaleString()
+    };
+
+    guests.push(newGuest);
+    saveGuests();
+    renderGuestList();
+    
+    guestNameInput.value = '';
+    guestNameInput.focus();
+  });
